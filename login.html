@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Gêmeos Papelaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Gêmeos Papelaria</h1>
+    </header>
+
+    <!-- Tela de Login/Cadastro -->
+    <section id="auth-section">
+        <div id="auth-container">
+            <form id="login-form" class="auth-form">
+                <h2>Entrar</h2>
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Senha" required>
+                <button type="submit">Login</button>
+                <p>Não tem conta? <span id="show-register">Criar Conta</span></p>
+            </form>
+
+            <form id="register-form" class="auth-form hidden">
+                <h2>Criar Conta</h2>
+                <input type="text" id="register-name" placeholder="Nome" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="password" id="register-password" placeholder="Senha" required>
+                <button type="submit">Cadastrar</button>
+                <p>Já tem uma conta? <span id="show-login">Entrar</span></p>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

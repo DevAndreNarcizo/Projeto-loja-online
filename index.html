@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gêmeos Papelaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Gêmeos Papelaria</h1>
+        <div class="header-right">
+            <button id="logout-btn">Sair</button>
+            <button id="cart-btn">Carrinho (0)</button>
+        </div>
+    </header>
+
+    <!-- Lista de Produtos -->
+    <section id="product-list">
+        <h2>Produtos</h2>
+
+        <!-- Caderno de 96 folhas -->
+        <div class="product" data-id="1">
+            <img src="https://via.placeholder.com/200x200?text=Caderno+96+Folhas" alt="Caderno de 96 folhas" loading="lazy">
+            <h3>Caderno 96 Folhas</h3>
+            <p>R$ 15,00</p>
+            <button class="add-to-cart" data-id="1" data-name="Caderno 96 Folhas" data-price="15.00" data-image="https://via.placeholder.com/200x200?text=Caderno+96+Folhas">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Caderno de 48 folhas -->
+        <div class="product" data-id="2">
+            <img src="https://via.placeholder.com/200x200?text=Caderno+48+Folhas" alt="Caderno de 48 folhas" loading="lazy">
+            <h3>Caderno 48 Folhas</h3>
+            <p>R$ 10,00</p>
+            <button class="add-to-cart" data-id="2" data-name="Caderno 48 Folhas" data-price="10.00" data-image="https://via.placeholder.com/200x200?text=Caderno+48+Folhas">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Lápis de cor Faber Castell -->
+        <div class="product" data-id="3">
+            <img src="https://via.placeholder.com/200x200?text=Lápis+de+Cor+Faber+Castell" alt="Lápis de cor Faber Castell" loading="lazy">
+            <h3>Lápis de Cor Faber Castell</h3>
+            <p>R$ 20,00</p>
+            <button class="add-to-cart" data-id="3" data-name="Lápis de Cor Faber Castell" data-price="20.00" data-image="https://via.placeholder.com/200x200?text=Lápis+de+Cor+Faber+Castell">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Lápis de cor Crayola -->
+        <div class="product" data-id="4">
+            <img src="https://via.placeholder.com/200x200?text=Lápis+de+Cor+Crayola" alt="Lápis de cor Crayola" loading="lazy">
+            <h3>Lápis de Cor Crayola</h3>
+            <p>R$ 18,00</p>
+            <button class="add-to-cart" data-id="4" data-name="Lápis de Cor Crayola" data-price="18.00" data-image="https://via.placeholder.com/200x200?text=Lápis+de+Cor+Crayola">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Mochila de rodinha -->
+        <div class="product" data-id="5">
+            <img src="https://via.placeholder.com/200x200?text=Mochila+de+Rodinha" alt="Mochila de rodinha" loading="lazy">
+            <h3>Mochila de Rodinha</h3>
+            <p>R$ 120,00</p>
+            <button class="add-to-cart" data-id="5" data-name="Mochila de Rodinha" data-price="120.00" data-image="https://via.placeholder.com/200x200?text=Mochila+de+Rodinha">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Mochila de costas -->
+        <div class="product" data-id="6">
+            <img src="https://via.placeholder.com/200x200?text=Mochila+de+Costas" alt="Mochila de costas" loading="lazy">
+            <h3>Mochila de Costas</h3>
+            <p>R$ 80,00</p>
+            <button class="add-to-cart" data-id="6" data-name="Mochila de Costas" data-price="80.00" data-image="https://via.placeholder.com/200x200?text=Mochila+de+Costas">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Mochila 3D de rodinha -->
+        <div class="product" data-id="7">
+            <img src="https://via.placeholder.com/200x200?text=Mochila+3D+Rodinha" alt="Mochila 3D de rodinha" loading="lazy">
+            <h3>Mochila 3D de Rodinha</h3>
+            <p>R$ 150,00</p>
+            <button class="add-to-cart" data-id="7" data-name="Mochila 3D de Rodinha" data-price="150.00" data-image="https://via.placeholder.com/200x200?text=Mochila+3D+Rodinha">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Apontador -->
+        <div class="product" data-id="9">
+            <img src="https://via.placeholder.com/200x200?text=Apontador" alt="Apontador" loading="lazy">
+            <h3>Apontador</h3>
+            <p>R$ 5,00</p>
+            <button class="add-to-cart" data-id="9" data-name="Apontador" data-price="5.00" data-image="https://via.placeholder.com/200x200?text=Apontador">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Borracha -->
+        <div class="product" data-id="10">
+            <img src="https://via.placeholder.com/200x200?text=Borracha" alt="Borracha" loading="lazy">
+            <h3>Borracha</h3>
+            <p>R$ 2,50</p>
+            <button class="add-to-cart" data-id="10" data-name="Borracha" data-price="2.50" data-image="https://via.placeholder.com/200x200?text=Borracha">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Caneta esferográfica -->
+        <div class="product" data-id="11">
+            <img src="https://via.placeholder.com/200x200?text=Caneta+Esferográfica" alt="Caneta Esferográfica" loading="lazy">
+            <h3>Caneta Esferográfica</h3>
+            <p>R$ 3,00</p>
+            <button class="add-to-cart" data-id="11" data-name="Caneta Esferográfica" data-price="3.00" data-image="https://via.placeholder.com/200x200?text=Caneta+Esferográfica">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Régua de 30 cm -->
+        <div class="product" data-id="12">
+            <img src="https://via.placeholder.com/200x200?text=Régua+30cm" alt="Régua de 30 cm" loading="lazy">
+            <h3>Régua 30 cm</h3>
+            <p>R$ 4,00</p>
+            <button class="add-to-cart" data-id="12" data-name="Régua 30 cm" data-price="4.00" data-image="https://via.placeholder.com/200x200?text=Régua+30cm">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Pastas A4 -->
+        <div class="product" data-id="13">
+            <img src="https://via.placeholder.com/200x200?text=Pasta+A4" alt="Pasta A4" loading="lazy">
+            <h3>Pasta A4</h3>
+            <p>R$ 7,00</p>
+            <button class="add-to-cart" data-id="13" data-name="Pasta A4" data-price="7.00" data-image="https://via.placeholder.com/200x200?text=Pasta+A4">Adicionar ao Carrinho</button>
+        </div>
+
+    </section>
+
+<!-- Modal do Carrinho -->
+<div id="cart-modal" class="hidden">
+    <div id="cart-content">
+      <h3>Carrinho de Compras</h3>
+      <div id="cart-items"></div>
+      <p>Total: R$ <span id="total-price">0.00</span></p>
+      <button id="checkout-btn">Finalizar Compra</button>
+      <button id="close-cart-btn">Fechar</button>
+      <button id="cart-btn">Carrinho (0)</button>
+    </div>
+  </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Gêmeos Papelaria</p>
+    </footer>
+
+    <script src="script.js" async></script>
+</body>
+</html>
